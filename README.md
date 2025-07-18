@@ -31,13 +31,52 @@ Use your preferred package manager (npm or yarn) to install the project dependen
 
 ### Run the Development Server: 
 Start the Vite development server
+```
+npm run dev
+```
 
 ### Open in Browser: 
 Once the development server is running, open your web browser and navigate to http://localhost:3000 to access the Todo App.
 
+## Testing
+
+This project uses Vitest and React Testing Library for testing. To run the tests, use the following commands:
+
+### Run Tests Once:
+```
+npm test
+```
+
+### Run Tests in Watch Mode:
+```
+npm run test:watch
+```
+
+### Generate Test Coverage Report:
+```
+npm run test:coverage
+```
+After running the coverage command, you can view the detailed report in the `coverage` directory.
+
+## Deployment
+
+This project is configured for automatic deployments:
+
+- **Production**: Automatically deploys to GitHub Pages when changes are pushed to the master branch
+- **Preview**: Generates preview deployments for pull requests using Netlify or Vercel
+
+See the [Deployment Guide](./docs/DEPLOYMENT.md) for more details on setting up preview deployments.
+
 ## Contributing
 Contributions are welcome! If you find a bug or have an idea for an improvement, feel free to open an issue or submit a pull request.
- Please make sure to follow the existing code style and conventions.
+Please make sure to follow the existing code style and conventions.
+
+When contributing:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests to ensure they pass
+5. Submit a pull request
 
 ## License
 This project is licensed under the MIT License. Feel free to use and modify the code as needed.
